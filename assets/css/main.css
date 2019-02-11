@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: rgba(186, 196, 253, 0.57);
+}
+
+.bg {
+  background-image: url("/images/astrid.jpg");
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.content {
+  color: white;
+  background: rgba(186, 196, 253, 0.57);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  top: 50px;
+  left: 0;
+  position: fixed;
+  margin-left: 50px;
+  margin-right: 50px;
+  right: 0;
+  z-index: 2;
+  padding: 20px 10px;
+}
+
+.inner {
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  /* background-color: red; */
+  height: 80px;
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inner a {
+  cursor: pointer;
+}
+.inner img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 640px) {
+  .inner {
+    height: 100px;
+    padding-left: 30px;
+  }
+
+  .inner img {
+    float: left;
+
+    width: 20%;
+  }
+}
